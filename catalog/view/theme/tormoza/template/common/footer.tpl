@@ -24,9 +24,8 @@
 					}
 					?>
                     <li style="margin:0;"><span>Имя*</span><input class="username" type="text" placeholder="Ваше имя" default="Ваше имя" value="<?php echo $username?>"/></li>
-                    <li style="margin:0;"><span>Телефон*</span><input class="userphone phonemask" type="text" placeholder="+7 XXX XXX XX XX" default="+7 XXX XXX XX XX" value="<?php echo $userphone?>"/></li>
-                    <li style="margin:0;"><span>VIN</span><input type="text" class="uservin" placeholder="17 символов VIN-кода автомобиля" default="17 символов VIN-кода автомобиля" value="<?php echo $uservin?>"/></li>
-					<li style="margin:0;"><span>Комментарии</span><textarea placeholder="Марка машины и нужная деталь" default="Марка машины и нужная деталь" class="usertxt <?php if (!empty($search_phrase)):?>fr_s<?endif;?>" cols="" rows=""><?php echo empty($search_phrase)?"":$search_phrase?></textarea></li>
+                    <li style="margin:0;"><span>Телефон*</span><input class="userphone phonemask" type="text" placeholder="+7 XXX XXX XX XX" default="+7 XXX XXX XX XX" value="<?php echo $userphone?>"/></li>                    
+					<li style="margin-top: 24px;"><span>Комментарии</span><textarea placeholder="Марка машины и нужная деталь" default="Марка машины и нужная деталь" class="usertxt <?php if (!empty($search_phrase)):?>fr_s<?endif;?>" cols="" rows=""><?php echo empty($search_phrase)?"":$search_phrase?></textarea></li>
 					<li style="margin:0;"><div style="font-size:8px;font-weight: bold;text-align: center;position:relative;">
 								<img src='http://autot.invbl.ru/catalog/view/theme/tormoza/img/login.png' style="width: 15px;height:20px;float:left;margin-left:10px;" />
 								<div style="position:absolute;top:0;left:40px;font-size:8.5px;">Ваши данные необходимы только для связи с Вами,<br /> и не передаются третьим лицам</div>
@@ -67,7 +66,7 @@
 			<td style="padding-left:100px;">
                 <h4>Поделиться с друзьями:</h4>
                 <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,lj,moikrug,gplus"></div>
-                <!-- 
+                <!--
                 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
                     <a href="http://vk.com/zapparts_ru" target="_blank" style="float:left;">
 						<img src="http://autot.invbl.ru/catalog/view/theme/tormoza/img/vk_new.png" width="36" height="34" border="0" alt="Share">
@@ -81,7 +80,7 @@
                     <a class="addthis_button_evernote"></a>
                     <a class="addthis_button_google_plusone_share"></a>
                 </div>
-                <script type="text/javascript">
+                <!--script type="text/javascript">
                     var addthis_config = {
                         "data_track_addressbar":true,
                         "image":"<?php echo HTTP_IMAGE . $this->config->get('config_banner'); ?>"
@@ -97,37 +96,35 @@
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter20404390 = new Ya.Metrika({
-                    id:20404390,
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter20404501 = new Ya.Metrika({id:20404501,
+                    webvisor:true,
                     clickmap:true,
                     trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
 
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/20404390" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="//mc.yandex.ru/watch/20404501" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 <script>
 function reachGoalSite(name){
-    //yaCounter20404501.reachGoal(name);
+    yaCounter20404501.reachGoal(name);
 }
 </script>
 <?php if($yandexphone): ?>
@@ -158,7 +155,7 @@ function reachGoalSite(name){
 </script>
 <?php endif;?>
 
-<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=qh3HbMXJ64s6Lny*izwlRDi97hwySYEg8Yw5QMWe0nwNx2z33du5iCzHuV5y/LdCyRxmid4uL30QkYhZG*6tdu0raxI1XOiXeIIXwE0xFPaI92RLg8T/KwyvHkxoG5mYEtBDyGNn0WSa718KG*gKoIgp2wcTNeaICWS/*tmaiB4-';</script>
+
 
 <!-- Код тега ремаркетинга Google -->
 <!--------------------------------------------------
@@ -202,7 +199,7 @@ function reachGoalSite(name){
 		if($(this).css('bottom') == '57px'){			
 			$(this).css('bottom', '0px');
 			$('.bottom_email').hide();
-			$(this).prepend('<p style="margin-bottom:15px;font-size:25px;text-align:center;color:#ffffff;font-weight:bold;text-shadow:#008bc8 2px 0px, #008bc8 -2px 0px, #008bc8 0px -2px, #008bc8 0px 2px;background:#696969;"><a onclick="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Полезные статьи [Тех. часть]</a> >>> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:20px;color:black;text-shadow:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Читать</span><img style="height:20px;" src="catalog/view/theme/tormoza/image/show.png" /></p>');
+			$(this).prepend('<p style="margin-bottom:15px;font-size:25px;text-align:center;color:#ffffff;font-weight:bold;text-shadow:#008bc8 2px 0px, #008bc8 -2px 0px, #008bc8 0px -2px, #008bc8 0px 2px;background:#696969;"><a onclick="toggleInfo();">Как правильно выбрать тормозные колодки. И насколько это важно!</a> >>> <span style="font-size:20px;color:black;text-shadow:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Читать</span><img style="height:20px;" src="catalog/view/theme/tormoza/image/show.png" /></p>');
 			$(this).find('p span').html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Читать');
 			$(this).find('p img').attr('src', 'catalog/view/theme/tormoza/image/show.png');
 			$(this).css('opacity', '1');
@@ -252,7 +249,7 @@ function reachGoalSite(name){
 			$phone=explode(" ",$phone); 
 			?>
 	<span class="phone">ООО "ZAPPARTS" <span class="phonen <?php if($yandexphone): ?>call_phone_3<?php endif;?>" > <a href="tel: +7 <?php echo isset($phone[1])?$phone[0]:499 ?> <?php echo isset($phone[1])?$phone[1]:$phone[0]; ?>">8 <span  <?php if($yandexphone): ?>class="ya_code" <?php else: ?> class="ya_code1"<?php endif;?>>(<?php echo isset($phone[1])?$phone[0]:499 ?>)</span> <span  <?php if($yandexphone): ?>class="ya_phone"<?php else:?>class="ya_phone1"<?php endif;?> ><?php echo isset($phone[1])?$phone[1]:$phone[0]; ?></a></span></span></span>
-    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('config_address');?></span>
+    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('footer_copy');?></span>
 </div><!-- #footer -->
 
 <script src="http://cdn.k50.ru/k50/k50tracker2.js"></script>

@@ -1,0 +1,55 @@
+#content {
+}
+
+
+
+.block_titla {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #df0020;
+    padding-bottom: 5px;
+    border-bottom: 2px dotted #df0020;
+}
+
+.advantage_lista .li_a{
+    font-size: 14px;
+    color: #454545;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-right: 10px;    
+}
+
+.advantage_lista .li_a.wimg{
+    min-height: 130px;
+}
+
+.advantage_lista div.left{
+   float: left;
+   margin: 0 30px 10px 0;
+}
+
+.advantage_lista .bord{
+    margin: 20px 0;
+   border-bottom: 2px dotted #222222;
+}
+
+.advantage_lista .li_b{
+    padding-right: 10px;
+    font-size: 14px;
+    color: #454545;
+    margin-bottom: 30px;
+}
+
+.advantage_lista p.text-riwe{
+    font-size: 14px;
+    color: #454545;
+    word-wrap: break-word;
+}
+
+.advantage_lista p.name{
+    font-size: 14px;
+    color: #000;
+    margin-left: 880px;
+    font-weight: bold;
+}

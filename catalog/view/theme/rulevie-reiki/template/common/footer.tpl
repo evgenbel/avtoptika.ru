@@ -67,7 +67,7 @@
 			<td style="padding-left:100px;">
                 <h4>Поделиться с друзьями:</h4>
                 <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,lj,moikrug,gplus"></div>
-                <!-- 
+                <!--
                 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
                     <a href="http://vk.com/zapparts_ru" target="_blank" style="float:left;">
 						<img src="http://autot.invbl.ru/catalog/view/theme/tormoza/img/vk_new.png" width="36" height="34" border="0" alt="Share">
@@ -97,33 +97,49 @@
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter20404390 = new Ya.Metrika({
-                    id:20404390,
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter29120765 = new Ya.Metrika({id:29120765,
+                    webvisor:true,
                     clickmap:true,
                     trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
 
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/20404390" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="//mc.yandex.ru/watch/29120765" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+
+<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">
+var _tmr = _tmr || [];
+_tmr.push({id: "2635290", type: "pageView", start: (new Date()).getTime()});
+(function (d, w) {
+   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+   ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window);
+</script><noscript><div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2635290;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div></noscript>
+<!-- //Rating@Mail.ru counter -->
+
+
 
 <script>
 function reachGoalSite(name){
@@ -157,6 +173,7 @@ function reachGoalSite(name){
     });
 </script>
 <?php endif;?>
+
 
 <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=qh3HbMXJ64s6Lny*izwlRDi97hwySYEg8Yw5QMWe0nwNx2z33du5iCzHuV5y/LdCyRxmid4uL30QkYhZG*6tdu0raxI1XOiXeIIXwE0xFPaI92RLg8T/KwyvHkxoG5mYEtBDyGNn0WSa718KG*gKoIgp2wcTNeaICWS/*tmaiB4-';</script>
 
@@ -252,7 +269,7 @@ function reachGoalSite(name){
 			$phone=explode(" ",$phone); 
 			?>
 	<span class="phone">ООО "ZAPPARTS" <span class="phonen <?php if($yandexphone): ?>call_phone_3<?php endif;?>" > <a href="tel: +7 <?php echo isset($phone[1])?$phone[0]:499 ?> <?php echo isset($phone[1])?$phone[1]:$phone[0]; ?>">8 <span  <?php if($yandexphone): ?>class="ya_code" <?php else: ?> class="ya_code1"<?php endif;?>>(<?php echo isset($phone[1])?$phone[0]:499 ?>)</span> <span  <?php if($yandexphone): ?>class="ya_phone"<?php else:?>class="ya_phone1"<?php endif;?> ><?php echo isset($phone[1])?$phone[1]:$phone[0]; ?></a></span></span></span>
-    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('config_address');?></span>
+    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('footer_copy');?></span>
 </div><!-- #footer -->
 
 <script src="http://cdn.k50.ru/k50/k50tracker2.js"></script>

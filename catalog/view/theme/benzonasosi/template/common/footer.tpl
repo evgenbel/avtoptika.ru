@@ -97,33 +97,48 @@
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter20404390 = new Ya.Metrika({
-                    id:20404390,
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter29120675 = new Ya.Metrika({id:29120675,
+                    webvisor:true,
                     clickmap:true,
                     trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
 
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/20404390" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="//mc.yandex.ru/watch/29120675" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+
+<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">
+var _tmr = _tmr || [];
+_tmr.push({id: "2635289", type: "pageView", start: (new Date()).getTime()});
+(function (d, w) {
+   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+   ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window);
+</script><noscript><div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2635289;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div></noscript>
+<!-- //Rating@Mail.ru counter -->
+
 
 <script>
 function reachGoalSite(name){
@@ -252,7 +267,7 @@ function reachGoalSite(name){
 			$phone=explode(" ",$phone); 
 			?>
 	<span class="phone">ООО "ZAPPARTS" <span class="phonen <?php if($yandexphone): ?>call_phone_3<?php endif;?>" > <a href="tel: +7 <?php echo isset($phone[1])?$phone[0]:499 ?> <?php echo isset($phone[1])?$phone[1]:$phone[0]; ?>">8 <span  <?php if($yandexphone): ?>class="ya_code" <?php else: ?> class="ya_code1"<?php endif;?>>(<?php echo isset($phone[1])?$phone[0]:499 ?>)</span> <span  <?php if($yandexphone): ?>class="ya_phone"<?php else:?>class="ya_phone1"<?php endif;?> ><?php echo isset($phone[1])?$phone[1]:$phone[0]; ?></a></span></span></span>
-    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('config_address');?></span>
+    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('footer_copy');?></span>
 </div><!-- #footer -->
 
 <script src="http://cdn.k50.ru/k50/k50tracker2.js"></script>

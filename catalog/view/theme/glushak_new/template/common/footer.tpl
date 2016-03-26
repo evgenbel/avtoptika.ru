@@ -67,7 +67,8 @@
 			<td style="padding-left:100px;">
                 <h4>Поделиться с друзьями:</h4>
                 <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,lj,moikrug,gplus"></div>
-                <!-- 
+
+                <!-- AddThis Button BEGIN
                 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
                     <a href="http://vk.com/zapparts_ru" target="_blank" style="float:left;">
 						<img src="http://autot.invbl.ru/catalog/view/theme/tormoza/img/vk_new.png" width="36" height="34" border="0" alt="Share">
@@ -100,8 +101,8 @@
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
-                w.yaCounter20404390 = new Ya.Metrika({
-                    id:20404390,
+                w.yaCounter20404453 = new Ya.Metrika({
+                    id:20404453,
                     clickmap:true,
                     trackLinks:true,
                     accurateTrackBounce:true,
@@ -122,7 +123,7 @@
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/20404390" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/20404453" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 <script>
@@ -132,6 +133,7 @@ function reachGoalSite(name){
 </script>
 <?php if($yandexphone): ?>
 <script type="text/javascript">
+
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -155,6 +157,8 @@ function reachGoalSite(name){
         })(window, document, tracker.get('clientId'));
 
     });
+
+
 </script>
 <?php endif;?>
 
@@ -252,7 +256,7 @@ function reachGoalSite(name){
 			$phone=explode(" ",$phone); 
 			?>
 	<span class="phone">ООО "ZAPPARTS" <span class="phonen <?php if($yandexphone): ?>call_phone_3<?php endif;?>" > <a href="tel: +7 <?php echo isset($phone[1])?$phone[0]:499 ?> <?php echo isset($phone[1])?$phone[1]:$phone[0]; ?>">8 <span  <?php if($yandexphone): ?>class="ya_code" <?php else: ?> class="ya_code1"<?php endif;?>>(<?php echo isset($phone[1])?$phone[0]:499 ?>)</span> <span  <?php if($yandexphone): ?>class="ya_phone"<?php else:?>class="ya_phone1"<?php endif;?> ><?php echo isset($phone[1])?$phone[1]:$phone[0]; ?></a></span></span></span>
-    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('config_address');?></span>
+    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('footer_copy');?></span>
 </div><!-- #footer -->
 
 <script src="http://cdn.k50.ru/k50/k50tracker2.js"></script>

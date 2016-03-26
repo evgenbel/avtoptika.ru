@@ -100,8 +100,8 @@
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
-                w.yaCounter20404390 = new Ya.Metrika({
-                    id:20404390,
+                w.yaCounter21641857 = new Ya.Metrika({
+                    id:21641857,
                     clickmap:true,
                     trackLinks:true,
                     accurateTrackBounce:true,
@@ -122,7 +122,7 @@
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/20404390" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/21641857" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 <script>
@@ -157,6 +157,7 @@ function reachGoalSite(name){
     });
 </script>
 <?php endif;?>
+
 
 <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=qh3HbMXJ64s6Lny*izwlRDi97hwySYEg8Yw5QMWe0nwNx2z33du5iCzHuV5y/LdCyRxmid4uL30QkYhZG*6tdu0raxI1XOiXeIIXwE0xFPaI92RLg8T/KwyvHkxoG5mYEtBDyGNn0WSa718KG*gKoIgp2wcTNeaICWS/*tmaiB4-';</script>
 
@@ -252,7 +253,7 @@ function reachGoalSite(name){
 			$phone=explode(" ",$phone); 
 			?>
 	<span class="phone">ООО "ZAPPARTS" <span class="phonen <?php if($yandexphone): ?>call_phone_3<?php endif;?>" > <a href="tel: +7 <?php echo isset($phone[1])?$phone[0]:499 ?> <?php echo isset($phone[1])?$phone[1]:$phone[0]; ?>">8 <span  <?php if($yandexphone): ?>class="ya_code" <?php else: ?> class="ya_code1"<?php endif;?>>(<?php echo isset($phone[1])?$phone[0]:499 ?>)</span> <span  <?php if($yandexphone): ?>class="ya_phone"<?php else:?>class="ya_phone1"<?php endif;?> ><?php echo isset($phone[1])?$phone[1]:$phone[0]; ?></a></span></span></span>
-    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('config_address');?></span>
+    <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('footer_copy');?></span>
 </div><!-- #footer -->
 
 <script src="http://cdn.k50.ru/k50/k50tracker2.js"></script>
