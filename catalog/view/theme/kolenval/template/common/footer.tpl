@@ -262,7 +262,9 @@ function reachGoalSite(name){
     <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('footer_copy');?></span>
 </div><!-- #footer -->
 
-<script src="http://cdn.k50.ru/k50/k50tracker2.js"></script>
-<script>k50Tracker.init({siteId: 377255003});</script>
+<?php if($yandexphone): ?>
+	<script src="http://cdn.k50.ru/k50/k50tracker2.js"></script>
+	<script>k50Tracker.init({siteId: 377255003});</script>
+<?php endif;?>
 </body>
 </html>
