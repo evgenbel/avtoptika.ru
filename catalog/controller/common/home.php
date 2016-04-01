@@ -341,13 +341,13 @@ class ControllerCommonHome extends Controller {
             if(!empty($_SESSION['calltouchOrderNumber'])){
                 $body.= 'Calltouch:' . $_SESSION['calltouchOrderNumber'] . "\r\n";
             }
-			if(!empty($this->request->post['utm_campaign']))
+			/*if(!empty($this->request->post['utm_campaign']))
 				$body.= $this->request->post['utm_campaign'] . "\r\n";
 			
 			if(!empty($this->request->post['utm_source']))
 				$body.= 'Канал:' . $this->request->post['utm_source'] . "\r\n";
 			if(!empty($this->request->post['referer']))
-				$body.= 'Источник:' . $this->request->post['referer'] . "\r\n";	
+				$body.= 'Источник:' . $this->request->post['referer'] . "\r\n";	*/
 
 			$mail->setText(html_entity_decode($body, ENT_QUOTES, 'UTF-8'));
 			$mail->send();
