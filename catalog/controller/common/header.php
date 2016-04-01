@@ -262,7 +262,14 @@ class ControllerCommonHeader extends Controller {
 				);
 			}
 		}
-		
+
+        $this->data['mobile'] = 0;
+        require_once(DIR_SYSTEM . 'library/Mobile_Detect.php');
+        $detect = new Mobile_Detect;
+        if ( $detect->isMobile() || $detect->isTablet() ){
+            $this->data['mobile'] = 1;
+        }
+
 		$this->children = array(
 			'module/language',
 			'module/currency',

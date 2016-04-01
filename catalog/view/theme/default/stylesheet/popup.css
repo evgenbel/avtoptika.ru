@@ -1,0 +1,296 @@
+
+.PopupBlock {
+    color: #222222;
+    padding: 20px;
+}
+.PopupBlock .Title {
+    font-size: 30px;
+    padding: 0 0 10px;
+    text-align: center;
+}
+.PopupBlock .Descr {
+    padding: 0 0 10px;
+    text-align: center;
+    font-size: 120%;
+}
+.PopupBlock .Buttons {
+    font-size: 0;
+    padding: 5px 0 0;
+}
+.PopupBlock .Buttons > .button + .button {
+    margin-left: 10px;
+}
+.PopupBlock h4{
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.DarkBg {
+    background: none repeat scroll 0 0 #000000;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5000;
+    display:none;
+}
+.Popup {
+    left: 50%;
+    position: fixed;
+    z-index: 5001;
+    width: 600px;
+    margin-left: -300px;
+    display: none;
+}
+.Popup > .in {
+    position: relative;
+}
+.Popup > .in > .Bg {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.Popup > .in > .Bg > .t {
+    background: url("../image/Popup1.png") no-repeat scroll 0 0 transparent;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.Popup > .in > .Bg > .t > i {
+    background: url("../image/Popup1.png") no-repeat scroll 100% -33px transparent;
+    display: block;
+    padding: 0 34px;
+}
+.Popup > .in > .Bg > .t > i > b {
+    background: url("../image/Popup1.png") repeat-x scroll 0 -66px transparent;
+    display: block;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    padding-top: 33px;
+}
+.Popup > .in > .Bg > .b {
+    background: url("../image/Popup1.png") no-repeat scroll 0 -99px transparent;
+    bottom: 0;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.Popup > .in > .Bg > .b > i {
+    background: url("../image/Popup1.png") no-repeat scroll 100% -132px transparent;
+    display: block;
+    padding: 0 34px;
+}
+.Popup > .in > .Bg > .b > i > b {
+    background: url("../image/Popup1.png") repeat-x scroll 0 -165px transparent;
+    display: block;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    padding-top: 33px;
+}
+.Popup > .in > .Bg > .m {
+    height: 100%;
+    overflow: hidden;
+}
+.Popup > .in > .Bg > .m > i {
+    display: block;
+    height: 100%;
+    margin-top: -33px;
+    overflow: hidden;
+}
+.Popup > .in > .Bg > .m > i > b {
+    background: url("../image/Popup2.png") repeat-y scroll -34px 0 transparent;
+    display: block;
+    height: 100%;
+    margin-top: 66px;
+    overflow: hidden;
+}
+.Popup > .in > .Bg > .m > i > b > u {
+    background: url("../image/Popup2.png") repeat-y scroll 100% 0 transparent;
+    display: block;
+    height: 100%;
+    margin-right: -34px;
+    padding: 0 68px 0 34px;
+    text-decoration: none;
+}
+.Popup > .in > .Bg > .m > i > b > u > tt {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    font-size: 0;
+    height: 100%;
+}
+.Popup > .in > .C {
+    min-height: 34px;
+    padding: 11px 16px 21px;
+    position: relative;
+}
+.Popup > .in > .C .CloseButton, #info_block  div.CloseButton{
+    background: url("../image/Popup1.png") no-repeat scroll 0 -198px transparent;
+    cursor: pointer;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 57px;
+    z-index: 4;
+}
+.Popup > .in > .C .CloseButton:hover {
+    opacity: 0.9;
+}
+
+
+.inputText > i {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #A7A7A7;
+    display: block;
+    font-style: normal;
+    padding: 2px;
+}
+.inputText > i > b {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+}
+.inputText input {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    line-height: 17px;
+    margin: 0;
+    width: 100%;
+}
+.select > i {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #A7A7A7;
+    display: block;
+    font-style: normal;
+    padding: 0;
+}
+.select > i > b {
+    display: block;
+    font-weight: normal;
+    overflow: hidden;
+}
+.select > i > b > u {
+    display: block;
+    text-decoration: none;
+}
+.select select {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    width: 100%;
+}
+.textarea > i {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #A7A7A7;
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+    font-style: normal;
+    padding: 2px;
+}
+.textarea > i > b {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+}
+.textarea textarea {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    font-family: 'Ubuntu',Arial,Helvetica,sans-serif;
+    font-size: 100%;
+    line-height: 17px;
+    margin: 0;
+    overflow: auto;
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+}
+.oT2 > table {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+.oT2 > table > tbody > tr > td {
+    padding: 5px 0;
+    vertical-align: top;
+}
+.oT2 > table > tbody > tr > td + td {
+    width: 5000px;
+}
+.oT2 > table > tbody > tr > td[colspan="2"] {
+    width: 100%;
+}
+.oT2 > table > tbody > tr > td:first-child > span {
+    display: block;
+    font-style: italic;
+    padding: 1px 10px 0 0;
+    white-space: nowrap;
+}
+.oT2 > table > tbody > tr > td.empty {
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.oT2 > table > tbody > tr > td > .error {
+    clear: both;
+    color: #CC0000;
+    font-size: 17px;
+    padding: 1px 0 3px 2px;
+}
+.oT2 > table > tbody > tr > td > .value {
+    padding: 3px 0 0;
+}
+.oT2 > table > tbody > tr > td > .Example {
+    color: gray;
+    font-size: 10px;
+    font-style: italic;
+}
+
+#search_predoplata{
+    font-size:30px;margin:0px;text-align: center;
+}
+#search_zapp{
+    font-size:30px;margin:0px;text-align: center;
+}
+#search_emidiatly{
+    font-size:26px;margin:0px;text-align: center;
+}
+.PopupBlock .h4{
+    font-size:30px; font-weight: bold; color:red;margin:0px;text-align: center;
+}
+.PopupBlock form .lock-info{
+    font-size:13px;margin:0px auto; width: 410px;padding: 5px 0px; font-weight: bold;text-align: center;
+}
+.PopupBlock form .lock-info img{
+    float: left;width: 50px;
+}
+.PopupBlock form .zapros_button{
+    cursor: pointer; padding:10px 20px;border:0px;font-weight: bold; font-size: 20px;margin:10px auto;text-align: center;display: block;margin-bottom:30px;height: 65px;
+}
+.PopupBlock form .info{
+    text-align: center;font-weight: bold;margin: 0;font-size:16px;
+}
+
+
+.PopupBlock form div.field{
+    margin:0px auto; width: 460px;
+}
+.PopupBlock form div.field textarea,
+.PopupBlock form div.field input{
+    border:1px solid black;border-radius: 5px;width: 100%;background-color: #d9d9d9;padding:5px;margin-top:5px;
+}

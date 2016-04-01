@@ -109,9 +109,9 @@ function reachGoalSite(name){
 	<p><span class="phone">ZAPPARTS: <span> <a href="tel: +7 <?php echo isset($phone[1])?$phone[0]:499 ?> <?php echo isset($phone[1])?$phone[1]:$phone[0]; ?>"> 8 <span>(<?php echo isset($phone[1])?$phone[0]:499 ?>)</span> <?php echo isset($phone[1])?$phone[1]:$phone[0]; ?> </a></span></span>Звони или отправь заявку
         <span class="copy">© 2009 - <?php echo date('Y') ?> <?=$this->config->get('footer_copy');?></span>
 </div><!-- #footer -->
-    <link rel="stylesheet" href="http://callbackhunter.com/widget/tracker.css">
+    <!--link rel="stylesheet" href="http://callbackhunter.com/widget/tracker.css">
     <script type="text/javascript" src="http://callbackhunter.com/widget/tracker.js" charset="UTF-8"></script>
-    <script type="text/javascript">var hunter_code="d41db65eff12e8af452c2988cf98add1";</script>
+    <script type="text/javascript">var hunter_code="d41db65eff12e8af452c2988cf98add1";</script-->
 
     <?php if($yandexphone): ?>
         <script src="http://cdn.k50.ru/k50/k50tracker2.js"></script>

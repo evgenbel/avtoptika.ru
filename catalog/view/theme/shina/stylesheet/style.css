@@ -523,7 +523,7 @@ div.li_2 .timer-site span {
 	left: -8px;
 	bottom: -1px;
 	background: url(../img/war_f.png) 0 0 no-repeat;
-	z-index: 10000;
+	z-index: 999;
 }
 /* Form Order
 -----------------------------------------------------------------------------*/

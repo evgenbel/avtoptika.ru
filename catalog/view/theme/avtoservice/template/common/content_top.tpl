@@ -65,7 +65,7 @@
     });
 </script>
 <div  class="DarkBg">&nbsp;</div>
-<div class="Popup p_model_list" style="width: 600px; margin-left: -300px; display: none;">
+<div class="Popup p_model_list">
     <div class="in">
         <div class="Bg">
             <div class="t">
