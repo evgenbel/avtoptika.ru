@@ -389,7 +389,10 @@ class ControllerCommonHeader extends Controller {
             //если не является то делаем транслит
 
             if (!in_array($text, $content)){
-                $return = strtr($text, $str[1]);
+                $return = strtr($text, $str[0]);
+                if (!in_array($return, $content)){
+                    $return = strtr($text, $str[1]);
+                }
                 $result[] = mb_strtolower($return, 'UTF-8');
             }else{
                 $result[] = $text;
