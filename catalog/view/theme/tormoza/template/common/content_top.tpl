@@ -132,7 +132,7 @@
 								<textarea id="comment" class="comment" style='border:1px solid black;border-radius: 5px;width: 100%;padding:5px;margin-top:5px;font-size:18px;font-weight: bold;' name="zakaz[note]" placeholder="Комментарий" ><?php echo $search_phrase?$search_phrase:""; ?></textarea>
 							</div>
 							<div style="font-size:13px;margin:0px auto; width: 410px;padding: 5px 0px; font-weight: bold;text-align: center;">
-								<img src='http://autot.invbl.ru/catalog/view/theme/tormoza/img/lock.png' style="float: left;width: 50px;" />
+								<img src='/catalog/view/theme/tormoza/img/lock.png' style="float: left;width: 50px;" />
 								Ваши данные необходимы только для связи с Вами и не передаются третьим лицам
 							</div>
 							<div style="clear:both;"></div>

@@ -205,7 +205,7 @@ _tmr.push({id: "2625209", type: "pageView", start: (new Date()).getTime()});
 					<li><span>VIN</span><input type="text" class="uservin" placeholder="17 символов VIN-кода автомобиля" default="17 символов VIN-кода автомобиля" value="<?php echo $uservin?>"/></li>
 					<li><span>Комментарии</span><textarea placeholder="Марка машины и нужная деталь" default="Марка машины и нужная деталь" class="usertxt <?php if (!empty($search_phrase)):?>fr_s<?endif;?>" cols="" rows=""><?php echo empty($search_phrase)?"":$search_phrase;?></textarea></li>
 					<li><div style="font-size:8px;font-weight: bold;text-align: center;position:relative;">
-								<img src='http://autot.invbl.ru/catalog/view/theme/tormoza/img/login.png' style="width: 15px;height:20px;float:left;margin-left:10px;" />
+								<img src='/catalog/view/theme/tormoza/img/login.png' style="width: 15px;height:20px;float:left;margin-left:10px;" />
 								<div style="position:absolute;top:0;left:40px;font-size:8.5px;">Ваши данные необходимы только для связи с Вами,<br /> и не передаются третьим лицам</div>
 							</div></li>
 				</ul>

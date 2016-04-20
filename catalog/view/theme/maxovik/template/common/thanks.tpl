@@ -58,7 +58,7 @@
 
     <div id="header">
         <!--a href="/" class="logo">Название сайта</a-->
-        <a href="/" class="logo"><img src="http://autot.invbl.ru/catalog/view/theme/tormoza/img/logo.png"></img></a>
+        <a href="/" class="logo"><img src="/catalog/view/theme/tormoza/img/logo.png"></img></a>
         <ul class="phone_list">
             <li>Горячая линия</li>
             <?php

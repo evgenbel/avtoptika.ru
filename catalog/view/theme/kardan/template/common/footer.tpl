@@ -27,7 +27,7 @@
                     <li style="margin:0;"><span>Телефон*</span><input class="userphone phonemask" type="text" placeholder="+7 XXX XXX XX XX" default="+7 XXX XXX XX XX" value="<?php echo $userphone?>"/></li>                    
 					<li style="margin-top: 24px;"><span>Комментарии</span><textarea placeholder="Марка машины и нужная деталь" default="Марка машины и нужная деталь" class="usertxt <?php if (!empty($search_phrase)):?>fr_s<?endif;?>" cols="" rows=""><?php echo empty($search_phrase)?"":$search_phrase?></textarea></li>
 					<li style="margin:0;"><div style="font-size:8px;font-weight: bold;text-align: center;position:relative;">
-								<img src='http://autot.invbl.ru/catalog/view/theme/tormoza/img/login.png' style="width: 15px;height:20px;float:left;margin-left:10px;" />
+								<img src='/catalog/view/theme/tormoza/img/login.png' style="width: 15px;height:20px;float:left;margin-left:10px;" />
 								<div style="position:absolute;top:0;left:40px;font-size:8.5px;">Ваши данные необходимы только для связи с Вами,<br /> и не передаются третьим лицам</div>
 				</ul>
 				<input style="margin-top:30px;" type="submit" value="" onclick="sendinfoThanks(this);return false;" />
@@ -69,7 +69,7 @@
                 <!--
                 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
                     <a href="http://vk.com/zapparts_ru" target="_blank" style="float:left;">
-						<img src="http://autot.invbl.ru/catalog/view/theme/tormoza/img/vk_new.png" width="36" height="34" border="0" alt="Share">
+						<img src="/catalog/view/theme/tormoza/img/vk_new.png" width="36" height="34" border="0" alt="Share">
 					</a>
                     <a class="addthis_button_facebook"></a>
                     <a class="addthis_button_livejournal"></a>
