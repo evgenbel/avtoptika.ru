@@ -55,5 +55,12 @@ class ModelSettingSetting extends Model {
                 WHERE `group`='config' AND `key`='config_email' and store_id>0";
 		$this->db->query($sql);
 	}
+
+    public function updTagManager(){
+        $sql = "UPDATE  " . DB_PREFIX . "setting
+                SET value=(SELECT value FROM (SELECT value FROM " . DB_PREFIX . "setting WHERE `group`='config' AND `key`='config_tag_manager' and store_id=0) t limit 1)
+                WHERE `group`='config' AND `key`='config_tag_manager' and store_id>0";
+        $this->db->query($sql);
+    }
 }
 ?>

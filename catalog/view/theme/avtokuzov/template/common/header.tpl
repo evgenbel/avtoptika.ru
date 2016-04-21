@@ -1,15 +1,17 @@
 <?php require_once DIR_TEMPLATE.'default/template/common/head.tpl';?>
 
 <body>
+<?php if ($this->config->get('config_tag_manager')):?>
 <!-- Google Tag Manager -->
-<!--noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KFRWS3"
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KFRWS3"
 				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KFRWS3');</script-->
+})(window,document,'script','dataLayer','GTM-KFRWS3');</script>
 <!-- End Google Tag Manager -->
+<?php endif;?>
 <script>
 	var hour=<?php echo $hour;?>;
 	var min=<?php echo $min;?>;

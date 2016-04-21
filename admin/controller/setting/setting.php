@@ -457,6 +457,12 @@ class ControllerSettingSetting extends Controller {
             $this->data['config_telephone_yandex'] = $this->config->get('config_telephone_yandex');
         }
 
+        if (isset($this->request->post['config_tag_manager'])) {
+            $this->data['config_tag_manager'] = $this->request->post['config_tag_manager'];
+        } else {
+            $this->data['config_tag_manager'] = $this->config->get('config_tag_manager');
+        }
+
         if (isset($this->request->post['work_from_work'])) {
             $this->data['work_from_work'] = $this->request->post['work_from_work'];
         } else {
