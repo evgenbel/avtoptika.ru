@@ -26,7 +26,7 @@
 
 .digit.static{
 	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
-    background: url('http://autot.invbl.ru/catalog/view/theme/tormoza/img/timer-tick.png') no-repeat;
+    background: url('/catalog/view/theme/tormoza/img/timer-tick.png') no-repeat;
 	
 	/*background-image: linear-gradient(bottom, #c5c5c5 50%, #bbbbbb 50%);
 	background-image: -o-linear-gradient(bottom, #c5c5c5 50%, #bbbbbb 50%);

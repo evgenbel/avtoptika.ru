@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".phonemask").inputmask("+7(999) 999 99 99");
+    $(".phonemask").inputmask("+7 (999) 999 99 999");
     $(".phonemask1").inputmask("(999) 999 99 99");
 	
 	$('.DarkBg').on('click', function(){
@@ -138,6 +138,7 @@ function sendinfo_(){
         alert('Введите сотовый телефон! Длина номера должна быть не менее 10 цифр');
         return false;
     }
+    $.fancybox.showActivity();
     var calltouch = false;
     jQuery.ajax({
         type:"POST",
@@ -151,6 +152,7 @@ function sendinfo_(){
     });
     if (!calltouch){
         alert('Ошибка отправки данных. Попробуйте еще раз позднее.');
+        $.fancybox.hideActivity();
         return false;
     }
 
@@ -186,6 +188,7 @@ function sendinfo_(){
             }
         }
     });
+    $.fancybox.hideActivity();
 }
 
 function saveEmail(){		
@@ -242,6 +245,7 @@ function sendinfo(el){
         alert('Введите сотовый телефон! Длина номера должна быть не менее 10 цифр');
         return false;
     }
+    $.fancybox.showActivity();
     var calltouch = false;
     jQuery.ajax({
         type:"POST",
@@ -255,6 +259,7 @@ function sendinfo(el){
     });
     if (!calltouch){
         alert('Ошибка отправки данных. Попробуйте еще раз позднее.');
+        $.fancybox.hideActivity();
         return false;
     }
     sendedinfo = true;
@@ -293,6 +298,7 @@ function sendinfo(el){
             }
         }
     });
+    $.fancybox.hideActivity();
 }
 
 function sendinfoThanks(el){
@@ -324,7 +330,7 @@ function sendinfoThanks(el){
         alert('Введите сотовый телефон! Длина номера должна быть не менее 10 цифр');
         return false;
     }
-
+    $.fancybox.showActivity();
     var calltouch = false;
 	jQuery.ajax({
         type:"POST",
@@ -340,6 +346,7 @@ function sendinfoThanks(el){
 
     if (!calltouch){
         alert('Ошибка отправки данных. Попробуйте еще раз позднее.');
+        $.fancybox.hideActivity();
         return false;
     }
     sendedinfo = true;
@@ -378,6 +385,7 @@ function sendinfoThanks(el){
             }
         }
     });
+    $.fancybox.hideActivity();
 }
 
 function sendinfoThanks_(){
@@ -408,6 +416,7 @@ function sendinfoThanks_(){
         alert('Введите сотовый телефон! Длина номера должна быть не менее 10 цифр');
         return false;
     }
+    $.fancybox.showActivity();
     var calltouch = false;
 	jQuery.ajax({
         type:"POST",
@@ -421,6 +430,7 @@ function sendinfoThanks_(){
     });
     if (!calltouch){
         alert('Ошибка отправки данных. Попробуйте еще раз позднее.');
+        $.fancybox.hideActivity();
         return false;
     }
 
@@ -458,6 +468,7 @@ function sendinfoThanks_(){
             }
         }
     });
+    $.fancybox.hideActivity();
 }
 
 
@@ -490,7 +501,7 @@ function sendinfo1(el){
         alert('Введите сотовый телефон! Длина номера должна быть не менее 10 цифр');
         return false;
     }
-
+    $.fancybox.showActivity();
     var calltouch = false;
     jQuery.ajax({
         type:"POST",
@@ -506,6 +517,7 @@ function sendinfo1(el){
 
     if (!calltouch){
         alert('Ошибка отправки данных. Попробуйте еще раз позднее.');
+        $.fancybox.hideActivity();
         return false;
     }
 
@@ -545,6 +557,7 @@ function sendinfo1(el){
             }
         }
     });
+    $.fancybox.hideActivity();
 }
 
 // возвращает cookie если есть или undefined
