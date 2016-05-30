@@ -66,12 +66,6 @@ _tmr.push({id: "2625207", type: "pageView", start: (new Date()).getTime()});
 			$phone=$this->config->get('config_telephone');
 			$phone=explode(" ",$phone); 
 			?>
-	<!--div id="info_block" style="width:1000px;position:absolute;;left:10%;top:20%;display:none;background:white;z-index:5001;padding:0 20px;border: 2px solid #AAAAAA;margin-bottom:90px;">
-		<span class="block_title" style="text-align:center;"><?php echo $tormoza_info['title'];?></span>
-		<?php echo html_entity_decode($tormoza_info['description']);?>
-		<div class="CloseButton" onclick="toggleInfo();">X</div>
-		<div class="CloseButton" onclick="toggleInfo();" style="top:99%;">X</div>
-	</div-->
     <div id="wrapper">
 		<div id="expander1" class="bottom_email_expander" style="display:none;z-index:5003;bottom:0px;width:1200px;">
 			<div style="padding: 5px 0px;margin-bottom:15px;font-size:25px;text-align:center;color:#ffffff;font-weight:bold;text-shadow:#008bc8 2px 0px, #008bc8 -2px 0px, #008bc8 0px -2px, #008bc8 0px 2px;">

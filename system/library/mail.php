@@ -150,6 +150,7 @@ class Mail {
 				mail($to, '=?UTF-8?B?' . base64_encode($this->subject) . '?=', $message, $header);
 			}
 		} elseif ($this->protocol == 'smtp') {
+			$ser_mail = 'mail.ru';
 			$handle = fsockopen($this->hostname, $this->port, $errno, $errstr, $this->timeout);
 
 			if (!$handle) {
@@ -197,7 +198,7 @@ class Mail {
 					}
 
 					if (substr($reply, 0, 3) != 250) {
-						trigger_error('Error: EHLO not accepted from server!');
+						trigger_error('Error: EHLO not accepted from server!' . $reply);
 						exit();								
 					}
 
@@ -305,7 +306,7 @@ class Mail {
 					}
 
 					if ((substr($reply, 0, 3) != 250) && (substr($reply, 0, 3) != 251)) {
-						trigger_error('Error: RCPT TO not accepted from server!');
+						trigger_error('Error: RCPT TO not accepted from server!' . $reply);
 						exit();							
 					}
 				} else {

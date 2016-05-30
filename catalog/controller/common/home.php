@@ -323,7 +323,8 @@ class ControllerCommonHome extends Controller {
 			$mail->port = $this->config->get('config_smtp_port');
 			$mail->timeout = $this->config->get('config_smtp_timeout');
 			$mail->setTo($current_email);
-			$mail->setFrom("avto-spectr@mail.ru");
+			//$mail->setFrom("avto-spectr@mail.ru");
+			$mail->setFrom($this->config->get('config_email'));
 			$mail->setSender($this->config->get('config_name'));
 			$parts = explode('@', $current_email);
 			$mail->setSubject(html_entity_decode('Поступила новая заявка №' . $order_id . ' на почту ' . $parts[0], ENT_QUOTES, 'UTF-8'));
@@ -362,8 +363,9 @@ class ControllerCommonHome extends Controller {
 		$mail->port = $this->config->get('config_smtp_port');
 		//$mail->timeout = $this->config->get('config_smtp_timeout');
 		$mail->setTo($this->config->get('config_email'));
-		//$mail->setTo('evgenbel@bk.ru');
-		$mail->setFrom("avto-spectr@mail.ru");
+		//$mail->setTo('evgeniyblv@gmail.com');
+		//$mail->setFrom("avto-spectr@mail.ru");
+		$mail->setFrom($this->config->get('config_email'));
 		$mail->setSender($this->config->get('config_name'));
 		if(isset($parts[0]))
 			$mail->setSubject(html_entity_decode('Поступила новая заявка №' . $order_id . ' на почту ' . $parts[0], ENT_QUOTES, 'UTF-8'));
