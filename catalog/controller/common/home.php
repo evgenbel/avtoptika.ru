@@ -363,7 +363,7 @@ class ControllerCommonHome extends Controller {
 		$mail->port = $this->config->get('config_smtp_port');
 		//$mail->timeout = $this->config->get('config_smtp_timeout');
 		$mail->setTo($this->config->get('config_email'));
-		//$mail->setTo('evgeniyblv@gmail.com');
+//		$mail->setTo('evgeniyblv@gmail.com');
 		//$mail->setFrom("avto-spectr@mail.ru");
 		$mail->setFrom($this->config->get('config_email'));
 		$mail->setSender($this->config->get('config_name'));
@@ -381,6 +381,14 @@ class ControllerCommonHome extends Controller {
 		$body.= $phone . "\r\n";
 		$body.='Vin:' . $vin . "\r\n";
         $body.= $txt . "\r\n\r\n";
+
+        $body .= $this->config->get('banner_name') . " ";
+        $body .= $this->config->get('banner_old_price') . " ";
+        $body .= $this->config->get('banner_new_price') . " ";
+        $body .= $this->config->get('banner_text1') . " ";
+        $body .= $this->config->get('banner_text2') . " ";
+
+        $body.=  "\r\n\r\n";
 
         if(!empty($_SESSION['calltouchOrderNumber'])){
             $body.= 'Calltouch:' . $_SESSION['calltouchOrderNumber'] . "\r\n";
